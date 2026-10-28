@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1.0">
+<title>CLIENTS</title>
+<link rel="icon" href="imgs/favicon.ico">
+<!- more favicon stuff 
+link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"
+link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"
+link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" ->
+	<style>
+	body {
+		min-height: 100vh;
+		background-image: url("imgs/bg-l.gif");
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-attachment: scroll;
+		background-size: auto;
+		}
+	#nav {
+		border: none;
+		border-collapse: collapse;
+		border-spacing: 0;
+		}
+	img {
+		display: block
+		}
+	td,th 	{
+		padding: 0;
+		margin: 0;
+		}
+</style> 
+</head>
+
+<body bgcolor="000000" text="ffffff" link="ffffff" alink="ffffff" vlink="ffffff" oncontextmenu="return false;">
+<br><br><br><br><br><br><br><br><br>
+	<center>
+		<table width="100%" height="100%" border="0">
+			<tbody>
+				<tr>
+					<td align="center">
+						
+						 <!-------------------------------->
+						
+						<table width="1600px" height="400px" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="center">
+										<a href="gallery.html"><img id="randImg" src="" alt="gallery" height="400px"></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>		
+					
+						<br><br>
+					
+						<div id="nav">
+							<table width="900px" height="15px" border="0" cellpadding="0" cellspacing="0" vspace="0">
+								<tbody>
+									<tr>
+										<td align="center" width="150px">
+											<!--<a href="home.html"><img src="imgs/nav-home.gif" alt="home" height="15px"></a>--><img src="imgs/void.gif" alt="void" height="15px">
+										</td>
+										<td align="center" width="150px">
+											<a href="bulletin.html"><img src="imgs/nav-bullet.gif" alt="bulletin" height="15px"></a>
+										</td>
+										<td align="center" width="150px">
+											<a href="about.html"><img src="imgs/nav-about.gif" alt="about" height="15px"></a>
+										</td>
+										<td align="center" width="150px">
+											<a href="store.html"><img src="imgs/nav-cat.gif" alt="store" height="15px"></a>
+										</td>
+										<td align="center" width="150px">
+											<a href="tour.html"><img src="imgs/nav-tour.gif" alt="tour" height="15px"></a>
+										</td>
+										<td align="center" width="150px">
+											<a href="flood.html"><img src="imgs/flood-alt.gif" alt="flood" height="15px"></a>
+										</td>
+									 </tr>
+								</tbody>
+							</table>
+						</div>	
+						
+						<!-------------------------------->
+						
+			  		</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+	
+<script>
+// Source - https://stackoverflow.com/a/54603783 Posted by Nick Parsons, modified by community. See post 'Timeline' for change history Retrieved 2026-10-07, License - CC BY-SA 4.0
+const images = ["imgs/hbanner-cli.gif","imgs/hbanner-drops.gif","imgs/hbanner-hctf.gif","imgs/hbanner-pushed.gif",];
+document.addEventListener('DOMContentLoaded', _ => {
+  const randImageIndex = ~~(Math.random() * images.length);
+  document.getElementById('randImg').src = images[randImageIndex];
+});	
+</script>
+	
+</html>
